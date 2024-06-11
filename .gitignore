@@ -4,4 +4,4 @@ pyvenv.cfg
 share/
 **/lib64/
 toxicitybench/lib64/
-lib64/
+lib64
