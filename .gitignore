@@ -6,3 +6,4 @@ share/
 toxicitybench/lib64/
 lib64
 .env
+**/etc
