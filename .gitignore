@@ -8,3 +8,4 @@ lib64
 .env
 **/etc
 Brain/
+.DS_Store
