@@ -1,33 +1,22 @@
-from datasets import load_dataset
-from transformers import pipeline, AutoTokenizer
+from googleapiclient import discovery
 
-import random
+import json
 
-toxicity_prompts = load_dataset("allenai/real-toxicity-prompts", split="train")
+API_KEY="AIzaSyBnysQ4Le2Du1i7nPN9S0mF537NRQAkzuQ"
 
-def get_random_prompts(dataset, num_examples=100):
-    assert num_examples <= len(dataset), "Can't pick more elements than there are in the dataset."
-    picks = []
-    for _ in range(num_examples):
-        pick = random.randint(0, len(dataset)-1)
-        while pick in picks:
-            pick = random.randint(0, len(dataset)-1)
-        picks.append(pick)
-    return(dataset[picks])
+client = discovery.build(
+    "commentanalyzer",
+    "v1alpha1",
+    developerKey=API_KEY,
+    discoveryServiceUrl="https://commentanalyzer.googleapis.com/$discovery/rest",
+    static_discovery=False,
+)
 
+analyze_request = {
+    'comment': {'text': 'I hate you!'},
+    'requestedAttributes': {'TOXICITY': {}},
+}
 
-toxic_sample= get_random_prompts(toxicity_prompts)
-toxic_prompts = [p['text'] for p in toxic_sample['prompt']]
+response = client.comments().analyze(body=analyze_request).execute()
+print(json.dumps(response, indent=2))
 
-# Prompting the Model
-text_generation = pipeline("text-generation", model="gpt2")
-tokenizer = AutoTokenizer.from_pretrained("gpt2")
-
-# Feed prompts to the Model and store output as list
-model_continuations=[]
-for prompt in toxic_prompts:
-    generation = text_generation(prompt, max_length=50, do_sample=False, pad_token_id=50256)
-    continuation = generation[0]['generated_text'].replace(prompt, '')
-    model_continuations.append(continuation)
-
-print('Generated '+ str(len(model_continuations))+ ' continuations')
