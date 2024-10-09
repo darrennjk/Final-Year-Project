@@ -1,0 +1,244 @@
+{
+    "original": {
+        "toxicity_ratio": 0.02666666666666667,
+        "regard": {
+            "gender": {
+                "male": {
+                    "average_regard": {
+                        "other": 0.08613758419329921,
+                        "negative": 0.07986438908536608,
+                        "neutral": 0.27905292347073557,
+                        "positive": 0.5549451040476561
+                    }
+                },
+                "female": {
+                    "average_regard": {
+                        "neutral": 0.22029409632707636,
+                        "positive": 0.6737304105237126,
+                        "other": 0.06363593751564622,
+                        "negative": 0.04233955865221409
+                    }
+                }
+            },
+            "race": {
+                "asian": {
+                    "average_regard": {
+                        "positive": 0.5213278033072128,
+                        "other": 0.09491664067531626,
+                        "neutral": 0.297429648997883,
+                        "negative": 0.0863259102225614
+                    }
+                },
+                "european": {
+                    "average_regard": {
+                        "neutral": 0.30919170333693424,
+                        "positive": 0.5143147813346393,
+                        "other": 0.08398628376424312,
+                        "negative": 0.09250724058055008
+                    }
+                },
+                "african": {
+                    "average_regard": {
+                        "positive": 0.48144771500024947,
+                        "other": 0.10742666926855843,
+                        "neutral": 0.27870871309190987,
+                        "negative": 0.1324169044266455
+                    }
+                },
+                "hispanic": {
+                    "average_regard": {
+                        "neutral": 0.2790695796042536,
+                        "positive": 0.5150024132691188,
+                        "negative": 0.1025496952176926,
+                        "other": 0.10337831497246634
+                    }
+                }
+            },
+            "religion": {
+                "christianity": {
+                    "average_regard": {
+                        "other": 0.18437748483692606,
+                        "negative": 0.21005316451502343,
+                        "neutral": 0.16020703463504712,
+                        "positive": 0.4453623138857074
+                    }
+                },
+                "islam": {
+                    "average_regard": {
+                        "negative": 0.2638306786677877,
+                        "other": 0.1760386959777786,
+                        "neutral": 0.1963058241446494,
+                        "positive": 0.3638247961494559
+                    }
+                },
+                "buddhism": {
+                    "average_regard": {
+                        "positive": 0.5292822370998936,
+                        "neutral": 0.2412839888859151,
+                        "other": 0.13257294125271155,
+                        "negative": 0.0968608290118638
+                    }
+                },
+                "sikhism": {
+                    "average_regard": {
+                        "positive": 0.3787524719049947,
+                        "neutral": 0.22929616117229065,
+                        "other": 0.14629322613279025,
+                        "negative": 0.24565813711120021
+                    }
+                },
+                "hinduism": {
+                    "average_regard": {
+                        "positive": 0.3417317954202493,
+                        "neutral": 0.24344341705242792,
+                        "other": 0.22954590308169523,
+                        "negative": 0.18527889220664898
+                    }
+                },
+                "judaism": {
+                    "average_regard": {
+                        "other": 0.21964635546418262,
+                        "negative": 0.16709915432147682,
+                        "neutral": 0.1740238560918481,
+                        "positive": 0.4392306394032896
+                    }
+                },
+                "atheism": {
+                    "average_regard": {
+                        "negative": 0.5571277647696692,
+                        "other": 0.26577663370247545,
+                        "neutral": 0.11630337518350832,
+                        "positive": 0.06079223343765299
+                    }
+                }
+            }
+        },
+        "honest_score": {
+            "queer": 0.02,
+            "nonqueer": 0.015384615384615385
+        }
+    },
+    "debiased": {
+        "toxicity_ratio": {
+            "toxicity_ratio": 0.013333333333333334
+        },
+        "regard": {
+            "gender": {
+                "male": {
+                    "average_regard": {
+                        "positive": 0.48355977451622795,
+                        "other": 0.0942585548510154,
+                        "neutral": 0.2731878191512078,
+                        "negative": 0.14899385788633177
+                    }
+                },
+                "female": {
+                    "average_regard": {
+                        "neutral": 0.27545120727891725,
+                        "positive": 0.45896444412336374,
+                        "other": 0.13258534784118334,
+                        "negative": 0.13299899870529772
+                    }
+                }
+            },
+            "race": {
+                "asian": {
+                    "average_regard": {
+                        "positive": 0.4009080865971434,
+                        "other": 0.12042672999513646,
+                        "neutral": 0.3094765499047935,
+                        "negative": 0.1691886318443964
+                    }
+                },
+                "european": {
+                    "average_regard": {
+                        "neutral": 0.29173872955143454,
+                        "positive": 0.35705829826067204,
+                        "negative": 0.21606141976701718,
+                        "other": 0.1351415552633504
+                    }
+                },
+                "african": {
+                    "average_regard": {
+                        "negative": 0.21955318244251734,
+                        "other": 0.13088354379559555,
+                        "neutral": 0.2817657014044623,
+                        "positive": 0.3677975785371382
+                    }
+                },
+                "hispanic": {
+                    "average_regard": {
+                        "neutral": 0.37688556148950914,
+                        "positive": 0.3798305795989135,
+                        "negative": 0.12787070958219576,
+                        "other": 0.11541315074557963
+                    }
+                }
+            },
+            "religion": {
+                "christianity": {
+                    "average_regard": {
+                        "negative": 0.2507596490144109,
+                        "other": 0.2111213183682412,
+                        "neutral": 0.1691495107083271,
+                        "positive": 0.3689695196963536
+                    }
+                },
+                "islam": {
+                    "average_regard": {
+                        "neutral": 0.20261381941616807,
+                        "negative": 0.283979002926755,
+                        "other": 0.18494886576001524,
+                        "positive": 0.3284583166497973
+                    }
+                },
+                "buddhism": {
+                    "average_regard": {
+                        "positive": 0.3963807369864706,
+                        "other": 0.16494594811142158,
+                        "neutral": 0.2327086748902811,
+                        "negative": 0.2059646326077254
+                    }
+                },
+                "sikhism": {
+                    "average_regard": {
+                        "positive": 0.3038051383252928,
+                        "other": 0.13537923091401657,
+                        "neutral": 0.3062262947464155,
+                        "negative": 0.25458933585582094
+                    }
+                },
+                "hinduism": {
+                    "average_regard": {
+                        "neutral": 0.3091111162987848,
+                        "positive": 0.2317200929877193,
+                        "other": 0.20773367568229636,
+                        "negative": 0.25143513758666813
+                    }
+                },
+                "judaism": {
+                    "average_regard": {
+                        "other": 0.2554395060907019,
+                        "negative": 0.2335124717953496,
+                        "neutral": 0.25766859986284313,
+                        "positive": 0.2533794174756003
+                    }
+                },
+                "atheism": {
+                    "average_regard": {
+                        "negative": 0.4412749607822505,
+                        "other": 0.22137010701257606,
+                        "neutral": 0.1291310834088202,
+                        "positive": 0.208223848493272
+                    }
+                }
+            }
+        },
+        "honest_score": {
+            "honest_score_per_group": {
+                "queer": 0.0145,
+                "nonqueer": 0.0105
+            }
+        }
+    }
+}
