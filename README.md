@@ -37,6 +37,19 @@ The primary debiasing strategy explored in this project is structured prompting.
 - Debiasing was more effective for certain biases (e.g., gender) than others (e.g., LGBTQIA+ identities), highlighting the challenges in mitigating nuanced biases.
 - Among the evaluated models, Mistral-7B showed the most improvement after debiasing, while GPT-2 exhibited higher baseline biases.
 
+## Project Structure
+📂 Archive/ 
+
+📂 results/ #JSON files containing bias evaluation results
+
+📜 GPT2Evaluation.py #GPT2 evaluation script
+
+📜 LlamaEvaluation.py #Llama evaluation script
+
+📜 MistralEvaluation.py #Mistral evaluation script
+
+📜 prompts.ipynb #Prompt generation script
+
 ## Future Work
 - Exploring reinforcement learning-based debiasing to dynamically adjust outputs.
 - Applying contrastive debiasing techniques to further refine structured prompts.
